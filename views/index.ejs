@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          transformPerspective: {
+            '2000': '2000px'
+          },
+          transitionProperty: {
+            'transform': 'transform'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen font-sans leading-relaxed">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <section class="mb-16">
+      <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="bg-white rounded-xl shadow p-6 transition-transform hover:shadow-xl hover:-translate-y-1">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-blue-500 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12a1 1 0 10-2 0v3a1 1 0 102 0v-3zm-1-9a1 1 0 00-2 0v1a1 1 0 002 0V5zm6-1a1 1 0 00-2 0v4a1 1 0 002 0V5zm7 0h-6a1 1 0 010-2h6a1 1 0 010 2z" clip-rule="evenodd" />
+            </svg>
+            <h4 class="text-xl font-semibold">Nimbus</h4>
+          </div>
+          <p class="text-gray-600">Self-hosted CDN that uses an API to function</p>
+          <div class="mt-4 pt-4 border-t border-gray-200">
+            <a href="/nimbus" class="text-blue-600 hover:text-blue-800 text-sm">View Documentation →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6 transition-transform hover:shadow-xl hover:-translate-y-1">
+          <div class="flex items-center mb-4">
+            <svg class="w-8 h-8 text-gray-500 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+            </svg>
+            <h4 class="text-xl font-semibold">Pulse</h4>
+          </div>
+          <p class="text-gray-600">Encrypted chat application</p>
+          <div class="mt-4 pt-4 border-t border-gray-200">
+            <span class="text-gray-500 text-sm flex items-center gap-2">
+              View Documentation →
+              <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
+                Under Development
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
